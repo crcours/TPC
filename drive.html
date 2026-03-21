@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mes liens</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #0d0d0d;
+      color: #f0ede6;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 680px;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    .label {
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #7a7060;
+      margin-bottom: 0.6rem;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 700;
+      color: #f0ede6;
+      line-height: 1.1;
+    }
+
+    h1 span {
+      color: #c9a96e;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: #c9a96e;
+      margin-top: 1.2rem;
+    }
+
+    .link-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .link-item a {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      padding: 1.1rem 1.4rem;
+      border: 0.5px solid #2a2720;
+      border-radius: 10px;
+      background: #141310;
+      text-decoration: none;
+      color: inherit;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+      cursor: pointer;
+    }
+
+    .link-item a:hover {
+      background: #1e1c18;
+      border-color: #c9a96e44;
+      transform: translateX(4px);
+    }
+
+    .link-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 13px;
+      color: #c9a96e;
+      min-width: 22px;
+      font-weight: 500;
+    }
+
+    .link-name {
+      font-size: 15px;
+      font-weight: 400;
+      color: #d8d4cb;
+      flex: 1;
+      letter-spacing: 0.01em;
+    }
+
+    .link-arrow {
+      font-size: 14px;
+      color: #4a4640;
+      transition: color 0.2s, transform 0.2s;
+    }
+
+    .link-item a:hover .link-arrow {
+      color: #c9a96e;
+      transform: translateX(2px);
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      font-size: 12px;
+      color: #3d3a34;
+      text-align: center;
+      letter-spacing: 0.06em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="label">Ma sélection</p>
+      <h1>Mes <span>liens</span></h1>
+      <div class="divider"></div>
+    </header>
+
+    <ul class="link-list">
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">01</span>
+          <span class="link-name">Mya</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">02</span>
+          <span class="link-name">Ashley</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">03</span>
+          <span class="link-name">Camille</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">04</span>
+          <span class="link-name">Noémie</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">05</span>
+          <span class="link-name">Jade</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">06</span>
+          <span class="link-name">Léa</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">07</span>
+          <span class="link-name">Inès</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">08</span>
+          <span class="link-name">Zoé</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">09</span>
+          <span class="link-name">Clara</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+      <li class="link-item">
+        <a href="#">
+          <span class="link-number">10</span>
+          <span class="link-name">Sofia</span>
+          <span class="link-arrow">→</span>
+        </a>
+      </li>
+    </ul>
+
+    <footer>10 liens — tous fictifs</footer>
+  </div>
+</body>
+</html>
